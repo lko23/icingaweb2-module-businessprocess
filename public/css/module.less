@@ -547,9 +547,15 @@ td > a > .state-badges {
     > .empty               { background-color: @gray-semilight;         > a { color: @text-color-on-icinga-blue; }}
 }
 
-.tiles.few { font-size: 2.5em; }
-.tiles.normal { font-size: 2.1em; }
-.tiles.many { font-size: 1.8em; }
+.tiles.few { font-size: 2.3em; }
+.tiles.normal { font-size: 2.3em; }
+.tiles.many { font-size: 2.3em; }
+ 
+#layout.fullscreen-layout, div.compact {
+    .tiles.few { font-size: 2.567em; }
+    .tiles.normal { font-size: 2.567em; }
+    .tiles.many { font-size: 2.567em; }
+}
 
 #layout.twocols, #layout.layout-minimal, div.compact {
     .tiles.few { font-size: 1.8em; }
