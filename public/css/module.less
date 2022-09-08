@@ -530,21 +530,21 @@ td > a > .state-badges {
 }
 
 .tiles {
-    > .critical            { background-color: @color-critical;         > a { text-shadow: 0 0 1px mix(#000, @color-critical, 40%); }}
-    > .critical.handled    { background-color: @color-critical-handled; > a { text-shadow: 0 0 1px mix(#000, @color-critical-handled, 40%); }}
-    > .down                { background-color: @color-critical;         > a { text-shadow: 0 0 1px mix(#000, @color-critical, 40%); }}
-    > .down.handled        { background-color: @color-critical-handled; > a { text-shadow: 0 0 1px mix(#000, @color-critical-handled, 40%); }}
-    > .unknown             { background-color: @color-unknown;          > a { text-shadow: 0 0 1px mix(#000, @color-unknown, 40%); }}
-    > .unknown.handled     { background-color: @color-unknown-handled;  > a { text-shadow: 0 0 1px mix(#000, @color-unknown-handled, 40%); }}
-    > .unreachable         { background-color: @color-unknown;          > a { text-shadow: 0 0 1px mix(#000, @color-unknown, 40%); }}
-    > .unreachable.handled { background-color: @color-unknown-handled;  > a { text-shadow: 0 0 1px mix(#000, @color-unknown-handled, 40%); }}
-    > .warning             { background-color: @color-warning;          > a { text-shadow: 0 0 1px mix(#000, @color-warning, 40%); }}
-    > .warning.handled     { background-color: @color-warning-handled;  > a { text-shadow: 0 0 1px mix(#000, @color-warning-handled, 40%); }}
-    > .ok                  { background-color: @color-ok;               > a { text-shadow: 0 0 1px mix(#000, @color-ok, 40%); }}
-    > .up                  { background-color: @color-ok;               > a { text-shadow: 0 0 1px mix(#000, @color-ok, 40%); }}
-    > .pending             { background-color: @color-pending;          > a { text-shadow: 0 0 1px mix(#000, @color-pending, 40%); }}
-    > .missing             { background-color: @gray-semilight;         > a { color: @text-color-on-icinga-blue; }}
-    > .empty               { background-color: @gray-semilight;         > a { color: @text-color-on-icinga-blue; }}
+    > .critical            { background-color: @color-critical;         > a { color: @gray-lighter }}
+    > .critical.handled    { background-color: @color-critical-handled; > a { color: @gray-lighter }}
+    > .down                { background-color: @color-critical;         > a { color: @gray-lighter }}
+    > .down.handled        { background-color: @color-critical-handled; > a { color: @gray-lighter }}
+    > .unknown             { background-color: @color-unknown;          > a { color: @gray-lighter }}
+    > .unknown.handled     { background-color: @color-unknown-handled;  > a { color: @gray-lighter }}
+    > .unreachable         { background-color: @color-unknown;          > a { color: @gray-lighter }}
+    > .unreachable.handled { background-color: @color-unknown-handled;  > a { color: @gray-lighter }}
+    > .warning             { background-color: @color-warning;          > a { color: @gray-lighter }}
+    > .warning.handled     { background-color: @color-warning-handled;  > a { color: @gray-lighter }}
+    > .ok                  { background-color: @color-ok;               > a { color: @gray-lighter }}
+    > .up                  { background-color: @color-ok;               > a { color: @gray-lighter }}
+    > .pending             { background-color: @color-pending;          > a { color: @gray-lighter }}
+    > .missing             { background-color: @gray-semilight;         > a { color: @gray-lighter }}
+    > .empty               { background-color: @gray-semilight;         > a { color: @gray-lighter }}
 }
 
 .tiles.few { font-size: 2.3em; }
@@ -552,9 +552,16 @@ td > a > .state-badges {
 .tiles.many { font-size: 2.3em; }
  
 #layout.fullscreen-layout, div.compact {
-    .tiles.few { font-size: 2.567em; }
-    .tiles.normal { font-size: 2.567em; }
-    .tiles.many { font-size: 2.567em; }
+    .tiles.few { font-size: 2.59em; }
+    .tiles.normal { font-size: 2.59em; }
+    .tiles.many { font-size: 2.59em; }
+    .content::-webkit-scrollbar {
+    display: none;
+    }
+    .content {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
 }
 
 #layout.twocols, #layout.layout-minimal, div.compact {
